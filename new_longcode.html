@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>New Longcode Registration</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="datepicker/css/datepicker.css">
+	</head>
+
+	<body>
+		<div class="container"> <!-- this sets the 940px-wide centered layout -->
+
+			<div class="navbar">
+				<div class ="navbar-inner">
+					<div class="container">
+						<a class="brand" href="#">Hook Mobile</a>
+
+						<form class="navbar-form pull-right"> <!-- sign in form -->
+							<input type="text" class="span2" placeholder="Sign In Email"/>
+							<input type="text" class="span2" placeholder="Password"/>
+							<input class="btn" type="submit" value="Sign In"/>
+							<a class="navbar-text">Forgot Password?</a>
+						</form>
+
+					</div>
+				</div>
+			</div> <!-- end navbar -->
+
+
+			<div class="page-header">
+				<h1>Longcodes &gt; New Longcode</h1>
+			</div> 
+
+			<form>
+
+				<div class="row"> 
+					<div class="span8">
+						<label>Service Name</label>
+						<input type="text" class="span8" placeholder="Your service name"/>
+					</div>
+					<div class="span4">
+						<label>Service Category</label>
+						<select class="span4">
+							<option>Please Select</option>
+							<option>Other choices here</option>
+						</select>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="span12">
+						<label>Describe the purpose of your service</label>
+						<textarea rows="4" class="span12"></textarea>
+					</div>
+				</div>
+
+			<div class="page-header">
+				<h1>Longcodes to register</h1>
+			</div> 
+
+			<ul class="nav nav-tabs">
+				<li><a href="#">Single Longcode</a></li>
+				<li class="active"><a href="#">Longcode Range</a></li>
+				<li><a href="#">.CSV upload</a></li>
+			</ul>
+
+			<h3>Service activation dates</h3>
+			<div class="row">
+				<div class="span4">
+					<label>Not before</label>
+					<div class="input-append date" id="dp1" data-date="12-02-2012" data-date-format="mm-dd-yyyy">
+						<input class="span3" size="16" type="text" value="12-02-2012">
+						<span class="add-on"><i class="icon-th"></i></span>
+				  	</div>
+				</div>
+
+				<div class="span4">
+					<label>Ends on</label>
+					<div class="input-append date" id="dp2" data-date="12-02-2012" data-date-format="mm-dd-yyyy">
+						<input class="span3" size="16" type="text" value="12-02-2012" >
+						<span class="add-on"><i class="icon-th"></i></span>
+				  	</div>
+				</div>
+
+				<div class="span4">
+					<label>Longcode provider</label>
+					<select class="span4">
+						<option>Please Select</option>
+						<option>XO Communications</option>
+					</select>
+				</div>
+
+			</div>
+
+			<div class="page-header">
+				<h1>Service Messaging</h1>
+			</div>
+
+			<p>These are the messages that Verizon Wireless subscribers receive when permissioning your service and setting their indvidual preferences for your service.</p>
+			<p/>
+
+			<label>Response to HELP Message from Subscriber who has not opted into the service</label>
+			<textarea class="span12" rows="3">
+Thanks for reaching out! To interact with this SMS service, please text back 'start'
+			</textarea>
+
+			<label>Response to HELP Message from Subscriber who has  opted into the service</label>
+			<textarea class="span12" rows="3">
+Thanks for reaching out! You are subscribed. To opt-out, send STOP.
+			</textarea>
+
+			<label>Solicitation Message that we send on your behalf to obtain permission from the subscriber to receive messages</label>
+			<textarea class="span12" rows="3">
+Racer SMS Service wants to interact with you via SMS. To allow, text 'start' or else this will be the last message you receive.
+			</textarea>
+
+			<div class="row">
+				<div class="span12">
+					<a href="longcodes.html" class="btn btn-large">Save for future submission</a>
+					<a href="longcodes.html" class="btn btn-primary btn-large pull-right">Submit registration</a>
+				</div>
+			</form>
+
+		</div> <!-- end main container -->
+
+		<!-- js to make datepickers work -->
+		<script src="js/jquery.js"></script>
+		<script src="datepicker/js/bootstrap-datepicker.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#dp1').datepicker();
+				$('#dp2').datepicker();				
+			});
+		</script>
+
+	</body>
+</html>

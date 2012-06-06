@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Payment information</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	</head>
+
+	<body>
+		<div class="container"> <!-- this sets the 940px-wide centered layout -->
+
+			<div class="navbar">
+				<div class ="navbar-inner">
+					<div class="container">
+						<a class="brand" href="#">Hook Mobile</a>
+
+						<form class="navbar-form pull-right"> <!-- sign in form -->
+							<input type="text" class="span2" placeholder="Sign In Email"/>
+							<input type="text" class="span2" placeholder="Password"/>
+							<input class="btn" type="submit" value="Sign In"/>
+							<a class="navbar-text">Forgot Password?</a>
+						</form>
+
+					</div>
+				</div>
+			</div> <!-- end navbar -->
+
+
+			<div class="page-header">
+				<h1>
+					Billing
+					<small>The longcode registration service has a cost.</small>
+				</h1>
+			</div> 
+
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#">Credit Card</a>
+				</li>
+				<li>
+					<a href="#">Paypal</a>
+				</li>
+				<li>
+					<a href="#">Purchase Order</a>
+				</li>
+			</ul>
+
+			<form>
+
+			<h3>We accept Visa, Mastercard and American Express.</h3>
+
+			<div class="row">
+				<div class="span6"> <!-- left column -->
+					<label>Cardholder Name</label>
+					<input type="text" class="span6" placeholder="First M Last"/>
+
+					<label>Credit Card Number</label>
+					<input type="text" class="span6" placeholder="5555 5555 5555 5555"/>
+
+					<label>Expiration Date</label>
+					<input type="text" class="span6" placeholder="04/14"/>
+				</div> <!-- end left column -->
+
+				<div class="span6"> <!-- right column -->
+					<label>CVV Card Security Code (3 digits for VISA/MC, 4 digits for AMEX)</label>
+					<input type="text" class="span6" placeholder="123"/>
+
+					<label>Billing ZIP Code</label>
+					<input type="text" class="span6" placeholder="22022"/>
+				</div> <!-- end right column -->
+			</div>
+
+			<div class="row">
+				<div class="span1 offset11">
+					<input type="submit" class="btn btn-primary btn-large" value="Update"/>
+				</div>
+			</div>
+
+
+
+			</form>
+
+
+		</div> <!-- end main container -->
+	</body>
+</html>
